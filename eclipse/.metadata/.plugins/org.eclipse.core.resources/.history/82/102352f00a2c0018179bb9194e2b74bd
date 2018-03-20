@@ -1,0 +1,34 @@
+package com.sensualbardnoise.invertedmod.items;
+
+import java.util.List;
+
+import com.sensualbardnoise.invertedmod.Main;
+import com.sensualbardnoise.invertedmod.init.ModItems;
+import com.sensualbardnoise.invertedmod.util.IHasModel;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+import net.minecraftforge.fml.relauncher.Side;
+
+public class ItemBase extends Item implements IHasModel{
+	
+	public ItemBase(String name) {
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(Main.tabInvertedMod);
+		
+		ModItems.ITEMS.add(this);
+	}
+
+	@Override
+	public void registerModels() {
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
+		
+	}
+	@Override
+	@SideOnly(Side.CLIENT)
+	public void addInformation(ItemStack itemstack, EntityPlayer player, List<E> list, boolean isHeld) {
+		list.add("Potato");
+	}
+
+}

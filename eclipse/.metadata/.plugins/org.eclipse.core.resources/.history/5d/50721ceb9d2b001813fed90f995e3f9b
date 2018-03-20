@@ -1,0 +1,27 @@
+package com.sensualbardnoise.invertedmod.items;
+
+import com.sensualbardnoise.invertedmod.Main;
+import com.sensualbardnoise.invertedmod.init.ModItems;
+import com.sensualbardnoise.invertedmod.util.IHasModel;
+
+import net.minecraft.item.ItemFood;
+
+public class InvWheat extends ItemFood implements IHasModel{
+
+	public InvWheat(String name) {
+		super(4, 0.8F, false);
+
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(Main.tabInvertedMod);
+		
+		ModItems.ITEMS.add(this);
+	}
+
+	@Override
+	public void registerModels() {
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
+		
+	}
+
+}

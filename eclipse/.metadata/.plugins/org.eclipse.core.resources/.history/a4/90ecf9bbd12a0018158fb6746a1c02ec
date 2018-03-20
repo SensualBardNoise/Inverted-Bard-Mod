@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.util.handlers;
+
+import net.minecraft.item.ItemPickaxe;
+
+public class ModPickaxe extends ItemPickaxe {
+
+}

@@ -1,0 +1,20 @@
+package com.sensualbardnoise.invertedmod.dim;
+
+public class InvWorldProvider extends WorldProvider {
+
+	    @Override
+	    public DimensionType getDimensionType() {
+	        return ModDimensions.testDimensionType;
+	    }
+
+	    @Override
+	    public String getSaveFolder() {
+	        return "TEST";
+	    }
+
+	    @Override
+	    public IChunkGenerator createChunkGenerator() {
+	        return new TestChunkGenerator(world);
+	    }
+	}
+}

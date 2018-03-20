@@ -1,0 +1,17 @@
+package com.sensualbardnoise.invertedmod.util.handlers;
+
+import com.sensualbardnoise.invertedmod.init.ModItems;
+
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
+@EventBusSubscriber
+public class RegistryHandler {
+	
+	@SubscribeEvent
+	public static void onItemRegister(RegistryEvent<IForgeRegistryEntry<T>>.Register<Item> event) {
+		event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]))
+	}
+
+}

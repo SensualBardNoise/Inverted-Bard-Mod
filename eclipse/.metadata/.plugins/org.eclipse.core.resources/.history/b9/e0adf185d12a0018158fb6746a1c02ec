@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.util.handlers;
+
+import net.minecraft.item.ItemTool;
+
+public class ModTools extends ItemTool {
+
+}

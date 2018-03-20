@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "BB"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "sbnimod:invbread"
+        },
+     },
+     
+    
+    "result":
+    {
+        "item": "sbnimod:invbrbase",
+        "count": 2
+    }
+}

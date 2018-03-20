@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "WW",
+        "W"
+    ],
+    
+    "key":
+    {
+        "W":
+        {
+            "item": "minecraft:wheat"
+        }
+    },
+    
+    "result":
+    {
+        "item": "sbnimod:invwdust",
+        "count": 2
+    }
+}

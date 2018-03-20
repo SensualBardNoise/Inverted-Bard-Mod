@@ -1,0 +1,39 @@
+package com.sensualbardnoise.invertedmod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sensualbardnoise.invertedmod.tools.ItemInvPickaxe;
+import com.sensualbardnoise.invertedmod.util.Reference;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.item.Item;
+import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fml.common.registry.ForgeRegistries;
+
+public class ModPickaxe{
+
+	public static final ToolMaterial InvPickaxe = EnumHelper.addToolMaterial("invpickaxe", 3, 1500, 6F, 4F, 8);
+
+	public static final List<ItemPickaxe> PICKAXE = new ArrayList<ItemPickaxe>();
+	
+	public static Item inverted_pickaxe;
+	
+	public static void init()
+	{
+		inverted_pickaxe = new ItemInvPickaxe("inverted_pickaxe", InvPickaxe);
+		
+	}
+	public static void register() {
+		registerItem(inverted_pickaxe);
+		
+	}
+	
+	public static void registerItem(Item item) {
+		ForgeRegistries.ITEMS.register(item);
+		
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item,  0, new ModelResourceLocation(Reference.MOD_ID + ":" + item.getUnlocalizedName().substring(5, endIndex), "inventory"));
+	}
+}

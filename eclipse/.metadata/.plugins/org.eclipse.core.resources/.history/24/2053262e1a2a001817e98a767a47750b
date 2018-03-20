@@ -1,0 +1,18 @@
+package com.sensualbardnoise.invertedmod;
+
+import com.sensualbardnoise.invertedmod.proxy.CommonProxy;
+
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.Instance;
+
+@Mod(modid = Reference.MOD_ID, name = Reference.NAME, version = Reference.VERSION, acceptedMinecraftVersions = Reference.ACCEPTED_MINECRAFT_VERSIONS)
+
+public class InvertedMod {
+
+	@Instance	
+	public static InvertedMod instance;
+	
+	@SidedProxy(clientSide = Reference.CLIENT_PROXY_CLASS, serverSide = Reference.SERVER_PROXY_CLASS)
+	public static CommonProxy proxy;
+		
+}

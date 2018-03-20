@@ -1,0 +1,5 @@
+package com.sensualbardnoise.invertedmod.blocks;
+
+public class BlockBase {
+
+}

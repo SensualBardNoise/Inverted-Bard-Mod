@@ -1,0 +1,12 @@
+package com.sensualbardnoise.invertedmod.tools;
+
+import net.minecraft.item.ItemPickaxe;
+
+public class IteminvPickaxe extends ItemPickaxe implements IHasModel{
+
+	protected IteminvPickaxe(ToolMaterial material) {
+		super(material);
+		// TODO Auto-generated constructor stub
+	}
+
+}

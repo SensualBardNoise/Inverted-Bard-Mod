@@ -1,0 +1,19 @@
+package com.sensualbardnoise.invertedmod.items;
+
+import com.sensualbardnoise.invertedmod.util.IHasModel;
+
+import net.minecraft.item.ItemFood;
+
+public class ItemTomato extends ItemFood implements IHasModel{
+
+	public ItemTomato() {
+		super(4, 0.8F, false);
+	}
+
+	@Override
+	public void registerModels() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

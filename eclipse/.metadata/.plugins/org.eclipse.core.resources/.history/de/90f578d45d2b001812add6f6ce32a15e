@@ -1,0 +1,25 @@
+package com.sensualbardnoise.invertedmod.dim;
+
+import com.sensualbardnoise.invertedmod.init.ModDimensions;
+
+import net.minecraft.world.DimensionType;
+import net.minecraft.world.WorldProvider;
+import net.minecraft.world.gen.IChunkGenerator;
+
+public class InvWorldProvider extends WorldProvider {
+
+    @Override
+    public DimensionType getDimensionType() {
+        return ModDimensions.testDimensionType;
+    }
+
+    @Override
+    public String getSaveFolder() {
+        return "INVDIM";
+    }
+
+    @Override
+    public IChunkGenerator createChunkGenerator() {
+        return new InvChunkGenerator(world);
+    }
+}

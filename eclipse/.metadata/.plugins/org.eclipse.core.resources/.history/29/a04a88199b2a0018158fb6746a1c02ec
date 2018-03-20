@@ -1,0 +1,11 @@
+import net.minecraft.item.ItemPickaxe;
+
+public class ItemInvPickaxe extends ItemPickaxe {
+
+	protected ItemInvPickaxe(String name, ToolMaterial material) {
+		super(material);
+		this.setRegistryName(name);
+		this.setUnlocalizedName(name);
+	}
+	
+}

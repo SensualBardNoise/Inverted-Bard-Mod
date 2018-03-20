@@ -1,0 +1,43 @@
+package com.sensualbardnoise.invertedmod.items;
+
+import java.util.List;
+
+import com.sensualbardnoise.invertedmod.Main;
+import com.sensualbardnoise.invertedmod.init.ModItems;
+import com.sensualbardnoise.invertedmod.util.IHasModel;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+public class ItemBase extends Item implements IHasModel{
+	
+	public ItemBase(String name) {
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(Main.tabInvertedMod);
+		
+		ModItems.ITEMS.add(this);
+	}
+
+	@Override
+	public void registerModels() {
+		Main.proxy.registerItemRenderer(this, 0, "inventory");
+		
+	}
+	@Override
+	public void addInformation(ItemStack par1ItemStack, EntityPlayer par2EntityPlayer, List par3List, boolean par4){
+	NBTTagCompound nbt = par1ItemStack.getTagCompound();
+	if(nbt != null){
+	par3List.add(LocalizationHelper.getLocalizedString("color.red") + ": " + String.valueOf((nbt.getInteger("color") >> 16) & 0xFF));
+	par3List.add(LocalizationHelper.getLocalizedString("color.green") + ": " + String.valueOf((nbt.getInteger("color") >> 8) & 0xFF));
+	par3List.add(LocalizationHelper.getLocalizedString("color.blue") + ": " + String.valueOf((nbt.getInteger("color")) & 0xFF));
+	} else {
+	par3List.add("Red: " + "255");
+	par3List.add("Green: " + "255");
+	par3List.add("Blue: " + "255");
+	}
+}

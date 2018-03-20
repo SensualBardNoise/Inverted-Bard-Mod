@@ -1,0 +1,18 @@
+package com.sensualbardnoise.invertedmod.util.handlers;
+
+import java.util.Set;
+
+import com.sensualbardnoise.invertedmod.util.IHasModel;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemTool;
+
+public class ModTools extends ItemTool implements IHasModel{
+
+	protected ModTools(float attackDamageIn, float attackSpeedIn, ToolMaterial materialIn,
+			Set<Block> effectiveBlocksIn) {
+		super(attackDamageIn, attackSpeedIn, materialIn, effectiveBlocksIn);
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.armor;
+
+import net.minecraft.item.Item;
+
+public class ArmorBase extends Item {
+
+}

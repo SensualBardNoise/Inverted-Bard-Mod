@@ -1,0 +1,15 @@
+package com.sensualbardnoise.invertedmod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sensualbardnoise.invertedmod.util.IHasModel;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemPickaxe;
+
+public class ModPickaxe extends ItemPickaxe implements IHasModel{
+
+	public static final List<ItemPickaxe> PICKAXE = new ArrayList<ItemPickaxe>();
+
+}

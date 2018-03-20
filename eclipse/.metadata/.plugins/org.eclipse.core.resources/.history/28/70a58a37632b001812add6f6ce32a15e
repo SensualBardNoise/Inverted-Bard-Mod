@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.blocks;
+
+import net.minecraft.block.Block;
+
+public class InvertedChest extends Block {
+
+}

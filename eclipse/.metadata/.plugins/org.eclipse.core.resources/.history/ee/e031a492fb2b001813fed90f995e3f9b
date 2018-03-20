@@ -1,0 +1,5 @@
+package com.sensualbardnoise.invertedmod.util;
+
+public class Config {
+
+}

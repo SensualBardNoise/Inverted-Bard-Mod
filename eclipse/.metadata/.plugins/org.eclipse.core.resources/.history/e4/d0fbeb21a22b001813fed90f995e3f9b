@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "VV"
+    ],
+    
+    "key":
+    {
+        "B":
+        {
+            "item": "sbnimod:invbread"
+        },
+    
+    "result":
+    {
+        "item": "sbnimod:invbrbase",
+        "count": 2
+    }
+}

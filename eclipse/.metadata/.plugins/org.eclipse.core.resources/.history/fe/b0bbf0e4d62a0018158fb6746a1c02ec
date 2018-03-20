@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.tools;
+
+import net.minecraft.item.ItemPickaxe;
+
+public class IteminvPickaxe extends ItemPickaxe {
+
+}

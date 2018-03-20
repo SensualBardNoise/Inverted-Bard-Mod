@@ -1,0 +1,14 @@
+package com.sensualbardnoise.invertedmod.tools;
+
+import net.minecraft.item.ItemPickaxe;
+
+public class ItemInvPickaxe extends ItemPickaxe{
+
+	public ItemInvPickaxe(String name, ToolMaterial material) {
+		super(material);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+	}
+	
+
+}

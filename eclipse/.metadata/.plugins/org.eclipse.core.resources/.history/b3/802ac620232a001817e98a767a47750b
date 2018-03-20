@@ -1,0 +1,6 @@
+package com.sensualbardnoise.invertedmod;
+
+@Mod()
+public class Main {
+
+}

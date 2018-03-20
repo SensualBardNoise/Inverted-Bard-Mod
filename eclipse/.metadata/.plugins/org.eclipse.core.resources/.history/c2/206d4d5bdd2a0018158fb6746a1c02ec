@@ -1,0 +1,13 @@
+package com.sensualbardnoise.invertedmod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class InvertedOre extends Block implements IHasModel{
+
+	public InvertedOre(Material materialIn) {
+		super(materialIn);
+		// TODO Auto-generated constructor stub
+	}
+
+}

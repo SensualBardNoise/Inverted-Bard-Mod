@@ -1,0 +1,12 @@
+package com.sensualbardnoise.invertedmod.items;
+
+import com.sensualbardnoise.invertedmod.Reference;
+
+import net.minecraft.item.Item;
+
+public class ItemCheese extends Item {
+	public ItemCheese() {
+		setUnlocalizedName(Reference.InvertedItems.CHEESE.getUnlocalizedName());
+		setRegistryName(Reference.InvertedItems.CHEESE.getRegistryName());
+	}
+}

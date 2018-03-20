@@ -1,0 +1,19 @@
+package com.sensualbardnoise.invertedmod.tools;
+
+import com.sensualbardnoise.invertedmod.Main;
+import com.sensualbardnoise.invertedmod.init.ModItems;
+
+import net.minecraft.item.ItemPickaxe;
+
+public class IteminvPickaxe extends ItemPickaxe implements IHasModel{
+
+	protected IteminvPickaxe(String name, ToolMaterial material) {
+		super(material);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+		setCreativeTab(Main.tabInvertedMod);
+		
+		ModItems.ITEMS.add(this);
+	}
+
+}

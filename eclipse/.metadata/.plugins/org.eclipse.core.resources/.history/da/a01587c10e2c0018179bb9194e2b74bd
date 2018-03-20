@@ -1,0 +1,15 @@
+package com.sensualbardnoise.invertedmod.util;
+
+import java.util.List;
+
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
+
+public interface IHasModel {
+
+	public void registerModels();
+
+	
+	public static void addInformation(ItemStack par1Itemstack, List par2List) {
+	}
+}

@@ -1,0 +1,9 @@
+//ITEMS
+item.ruby.name=Inverted Ruby
+item.tomato.name=Tomato
+
+//BLOCKS
+tile.ruby_block.name=Inverted Ruby Block
+
+//Creative Tabs
+itemGroup.tab_invertedmod=Inverted Mod

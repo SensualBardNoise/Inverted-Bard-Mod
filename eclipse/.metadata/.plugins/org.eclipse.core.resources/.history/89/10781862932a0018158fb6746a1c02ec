@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.init;
+
+import net.minecraft.item.fooditem;
+
+public class ItemTomato extends ItemFood {
+
+}

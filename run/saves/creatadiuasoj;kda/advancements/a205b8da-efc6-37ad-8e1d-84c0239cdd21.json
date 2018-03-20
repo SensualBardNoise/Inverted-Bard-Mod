@@ -1,0 +1,10 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "swampland": "2018-03-19 21:23:09 -0700",
+      "plains": "2018-03-19 21:23:58 -0700",
+      "taiga": "2018-03-19 21:24:05 -0700"
+    },
+    "done": false
+  }
+}

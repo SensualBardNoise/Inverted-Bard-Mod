@@ -1,0 +1,7 @@
+package com.sensualbardnoise.invertedmod.items;
+
+import net.minecraft.item.Item;
+
+public class InvWPowder extends Item {
+
+}

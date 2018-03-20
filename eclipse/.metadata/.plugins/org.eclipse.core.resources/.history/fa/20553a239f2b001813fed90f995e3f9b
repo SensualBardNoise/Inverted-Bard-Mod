@@ -1,0 +1,22 @@
+{
+    "type": "minecraft:crafting_shaped",
+    
+    "pattern":
+    [
+        "R"
+    ],
+    
+    "key":
+    {
+        "R":
+        {
+            "item": "sbnimod:ruby_block"
+        }
+    },
+    
+    "result":
+    {
+        "item": "sbnimod:ruby",
+        "count": 9
+    }
+}

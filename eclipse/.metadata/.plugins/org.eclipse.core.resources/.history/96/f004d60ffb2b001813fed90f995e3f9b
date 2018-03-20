@@ -1,0 +1,34 @@
+package com.sensualbardnoise.invertedmod.dim;
+
+public class ModDimensions {
+
+    public static DimensionType testDimensionType;
+
+    public static void init() {
+        registerDimensionTypes();
+        registerDimensions();
+    }
+
+    private static void registerDimensionTypes() {
+        testDimensionType = DimensionType.register(ModTut.MODID, "_test", Config.dimensionId, TestWorldProvider.class, false);
+    }
+
+    private static void registerDimensions() {
+        DimensionManager.registerDimension(Config.dimensionId, testDimensionType);
+    }
+}
+
+
+public class CommonProxy {
+
+    ...
+
+    public void preInit(FMLPreInitializationEvent e) {
+
+        ...
+
+        ModDimensions.init();
+
+        ...
+
+    }

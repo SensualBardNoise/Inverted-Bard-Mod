@@ -1,0 +1,40 @@
+package com.sensualbardnoise.invertedmod.blocks;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.ITileEntityProvider;
+
+public class InvertedChest extends Block implements ITileEntityProvider {
+	public static final int GUI_ID = 1;
+
+    public TestContainerBlock() {
+        super(Material.ROCK);
+        setUnlocalizedName(ModTut.MODID + ".testcontainerblock");
+        setRegistryName("testcontainerblock");
+    }
+
+    @SideOnly(Side.CLIENT)
+    public void initModel() {
+        ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+    }
+
+    @Override
+    public TileEntity createNewTileEntity(World worldIn, int meta) {
+        return new TestContainerTileEntity();
+    }
+
+    @Override
+    public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, EnumHand hand, ItemStack heldItem, EnumFacing side,
+                float hitX, float hitY, float hitZ) {
+        // Only execute on the server
+        if (world.isRemote) {
+            return true;
+        }
+        TileEntity te = world.getTileEntity(pos);
+        if (!(te instanceof TestContainerTileEntity)) {
+            return false;
+        }
+        player.openGui(ModTut.instance, GUI_ID, world, pos.getX(), pos.getY(), pos.getZ());
+        return true;
+    }
+}
+}

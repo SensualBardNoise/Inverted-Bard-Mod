@@ -1,0 +1,19 @@
+package com.sensualbardnoise.invertedmod.init;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sensualbardnoise.invertedmod.items.ItemBase;
+import com.sensualbardnoise.invertedmod.tools.ItemInvPickaxe;
+
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemTool;
+import net.minecraftforge.common.util.EnumHelper;
+
+public class ModTools {
+	
+	public static final List<ItemTool> TOOLS = new ArrayList<ItemTool>();
+	public static final ItemTool INVERTED_PICKAXE = new ItemInvPickaxe("inverted_pickaxe");
+	public static final ToolMaterial INVERTED_PICKAXE = EnumHelper.addToolMaterial("inverted_pickaxe, 3, 1000, 4, 7, 10)
+
+}

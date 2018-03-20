@@ -1,0 +1,13 @@
+//ITEMS
+item.ruby.name=Inverted Ruby
+item.tomatoitem.name=Tomato
+
+//BLOCKS
+tile.ruby_block.name=Inverted Ruby Block
+tile.inverted_ore.name=Inverted Ore
+
+//Creative Tabs
+itemGroup.tab_invertedmod=Inverted Mod
+
+//tools
+item.inverted_pickaxe.name=Inverted Pickaxe

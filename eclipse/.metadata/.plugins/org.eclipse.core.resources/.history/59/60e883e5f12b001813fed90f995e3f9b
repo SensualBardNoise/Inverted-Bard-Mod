@@ -1,0 +1,12 @@
+package com.sensualbardnoise.invertedmod.commands;
+
+import com.sensualbardnoise.invertedmod.util.Reference;
+
+import net.minecraft.command.CommandBase;
+
+public class TeleportCommand extends CommandBase{
+	
+	public TeleportCommand() {
+			aliases = Lists.newArrayList(Reference.MOD_ID)
+	}
+}
